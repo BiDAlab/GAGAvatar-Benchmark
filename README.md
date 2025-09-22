@@ -152,7 +152,7 @@ We provide the code we use to train and evaluate this system, plus 3 pre-trained
 
 If you want to gain access to the dataset, code and the pre-trained models, follow these steps:
 
-1. Download [this](https://github.com/user-attachments/files/22422064/GAGAvatar-Benchmark-db_Agreement.pdf) license agreement, complete it and sign it
+1. Download [this](assets/GAGAvatar-Benchmark-db_Agreement.pdf) license agreement, complete it and sign it
 2. Send an email to **[atvs@uam.es](mailto:atvs@uam.es)** with the following information:
 
    - ***Subject***: `[DATABASE: GAGAvatar-Benchmark-db]`
