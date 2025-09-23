@@ -141,12 +141,51 @@ We provide the code we use to train and evaluate this system, plus 3 pre-trained
 - pre-trained model using only CREMA-D identities
 - pre-trained model using RAVDESS + CREMA-D identities
 
-## Training
+## Environment Setup
 
+Once we review your request, we will give you access to a zip file that contains two folders: (1) `GAGAvatar-Benchmark-db`: the database; and (2) `GAGAvatar-Benchmark-code`: the implementation of the system, including the pre-trained models.
 
+The code was tested on a Ubuntu 24.04 machine, with python 3.12 and a NVIDIA GeForce RTX 4090 GPU (CUDA version 12.8). Before running the code, follow these steps:
 
-## Evaluation
+- Create a new virtual environment with python 3.12:
 
+```bash
+conda create --name avatar python=3.12
+```
+
+- Activate it: 
+
+```bash
+conda activate avatar
+```
+
+- Install the python requirements:
+
+```bash
+pip install -r GAGAvatar-Benchmark-code/requirements.txt
+```
+
+## Running the code
+
+We provide two entry points: the training script and the evaluation script.
+
+The code runs in a single GPU, if you want to indicate which one, set `CUDA_VISIBLE_DEVICES` before running the scripts.
+
+We provide the pre-trained models that we evaluate in the paper in the directory `GAGAvatar-Benchmark-code/checkpoints`.
+
+### Training
+
+The script that runs the model training is `train.py`. If you run it from the root directory (the directory containing `GAGAvatar-Benchmark-code` and `GAGAvatar-Benchmark-db`), it will run with all the default parameters used in the paper.
+
+Run  `python GAGAvatar-Benchmark-code/src/train.py -h` for more details.
+
+The best checkpoint is obtained based on validation loss.
+
+### Evaluation
+
+The script that runs the model training is `evaluate.py`. If you run it from the root directory (the directory containing `GAGAvatar-Benchmark-code` and `GAGAvatar-Benchmark-db`), it will run with all the default parameters used in the paper.
+
+Run  `python GAGAvatar-Benchmark-code/src/evaluate.py -h` for more details.
 
 # Requesting access
 
@@ -169,5 +208,5 @@ If you want to gain access to the dataset, code and the pre-trained models, foll
 
 # Contact
 
-For more information contact Rubén Tolosana, associate professor at UAM at **[ruben.tolosana@uam.es](mailto:ruben.tolosana@uam.es)**
+For more information contact Rubén Tolosana, associate professor at UAM at **[ruben.tolosana@uam.es](mailto:ruben.tolosana@uam.es)** or Laura Pedrouzo, PhD student at **[laura.pedrouzo@uam.es](mailto:laura.pedrouzo@uam.es)**
 
