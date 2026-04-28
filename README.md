@@ -30,7 +30,7 @@
 
 # About
 
-This is the official repository for the paper [Is It Really You? Exploring Viometric Verification Scenarios in Photorealistic Talking-Head Avatar Videos](https://arxiv.org/abs/2508.00748), accepted in [IEEE IJCB 2025](https://ijcb2025.ieee-biometrics.org/). 
+This is the official repository for the paper [Is It Really You? Exploring Biometric Verification Scenarios in Photorealistic Talking-Head Avatar Videos](https://arxiv.org/abs/2508.00748), accepted in [IEEE IJCB 2025](https://ijcb2025.ieee-biometrics.org/). 
 
 We are releasing a **new talking-head avatar video dataset** and our **model implementation**, including our **pre-trained biometric verification models**.
 
